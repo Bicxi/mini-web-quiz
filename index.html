@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiple Choice Quiz</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="text-center mt-4 py-4">
+      <h1>Multiple Choice Quiz</h1>
+    </header>
+    <div class="container mt-5">
+        <div id="player-input" class="mb-4">
+            <!-- Place the player name input here -->
+        </div>
+        <!--split screen teil-->
+            <div id="quiz-container" class="card container-fluid" style="display: block;">
+                <div class="card-body row g-0 p-0">
+                    <div class="card-left col-lg-6">
+                        <div class="d-flex mb-5">
+                            <div class="circle bg-primary" id="question-number1">1</div>
+                            <div class="circle" id="question-number2">2</div>
+                            <div class="circle" id="question-number3">3</div>
+                            <div class="circle" id="question-number4">4</div>
+                            <div class="circle" id="question-number5">5</div>
+                        </div>
+                        <span class="kategorie">Naturwissenschaften</span>
+                        <p class="question">Wie züchtet man Axolotl in Minecraft?</p>
+                    </div>
+
+                    <div class="col-lg-6 bg-secondary d-flex p-5">
+                        <div class="d-flex flex-column justify-content-center align-items-center w-100">
+                            <p class="answer" data-answer="A">Sie brauchen ein groß genuges Wassergebiet.</p>
+                            <p class="answer" data-answer="B">Mit einem tropischen Fischwassereimer.</p>
+                            <p class="answer" data-answer="C">Sie müssen mit Honig gefüttert werden.</p>
+                            <p class="answer mb-0" data-answer="D">Man muss ihnen Blumen geben.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Place the question, the options and the results here - später mit TS! --> 
+            </div>
+        </div>
+        <div id="leaderboard" class="container mt-5">
+            <h2>Leaderboard</h2>
+            <!-- Place the leaderboard list here - später liste mit TS! -->
+            <div class="row d-flex pt-2 mb-5">
+                <div class="col-lg-11 d-flex flex-column justify-content-center align-items-center">
+                    <p class="person">Anne Hasihütli</p>
+                    <p class="person">Bruno WeDontTalkAbout-i</p>
+                    <p class="person">Waluigi</p>
+                    <p class="person">Wario</p>
+                </div>
+                <div class="col-lg-1 d-flex flex-column justify-content-center align-items-center">
+                    <p class="text-center score">9</p>
+                    <p class="text-center score">7</p>
+                    <p class="text-center score">7</p>
+                    <p class="text-center score">4</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="dist/main.js"></script>
+</body>
+</html>
