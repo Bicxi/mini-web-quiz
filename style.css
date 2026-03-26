@@ -46,6 +46,47 @@ h2 {
     font-family: "Sour Gummy";
 }
 
+h3 {
+    color: var(--bs-primary);
+    font-weight: 700;
+    font-size: 1.4rem;
+    font-family: "Sour Gummy";
+}
+
+input {
+    border: none;
+}
+input:hover {
+    background-color: rgba(var(--bs-tertiary-rgb), 0.7);
+}
+input:focus-visible {
+    outline-color: var(--bs-primary);
+    outline-style: solid;
+    outline-width: 2px;
+}
+
+button {
+    border-color: var(--bs-primary);
+}
+button:hover {
+    background-color: var(--bs-primary);
+    color: white;
+}
+
+::placeholder {
+  color: rgba(var(--bs-primary-rgb), 0.4);
+}
+
+/* PLAYER INPUT */
+.player {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: var(--bs-tertiary);
+  color: var(--bs-primary);
+  margin-bottom: 5px;
+}
+
 /* QUIZ CARD */
 #quiz-container {
     height: 100%;
@@ -117,6 +158,7 @@ h2 {
 #leaderboard {
     margin-bottom: 150px;
 }
+
 .person {
   width: 100%;
   padding: 10px;

@@ -14,11 +14,20 @@
 </head>
 <body>
     <header class="text-center mt-4 py-4">
-      <h1>Multiple Choice Quiz</h1>
+      <h1>Brunonono & Bicipos Quiz</h1>
     </header>
     <div class="container mt-5">
-        <div id="player-input" class="mb-4">
-            <!-- Place the player name input here -->
+        <div class="player-input">
+            <div class="row d-flex pt-2 mb-5">
+                <h3>Wie heißt du? (Pst... das ist deine Chance Batman zu sein!)</h3>
+                <div class="col-lg-10 d-flex flex-column justify-content-center align-items-center">
+                    <input type="text" id="player-name" class="player" placeholder="Batman">
+                    <!-- Place the player name input here -->
+                </div>
+                <div class="col-lg-2 d-flex flex-column justify-content-center align-items-center">
+                    <button id="playBtn" class="text-center score">Spielen!</button>
+                </div>
+            </div>
         </div>
         <!--split screen teil-->
             <div id="quiz-container" class="card container-fluid" style="display: block;">
