@@ -1,14 +1,12 @@
-import { Question } from "./questions.js";
-import { getLeaderboard } from './scoring';
-
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.displayLeaderboard = displayLeaderboard;
+const scoring_1 = require("./scoring");
 function displaySomething() {
-    
 }
-
-export function displayLeaderboard(): void {
-    const leaderboard = getLeaderboard();
-    const leaderboardEl = document.getElementById('leaderboard') as HTMLElement;
-
+function displayLeaderboard() {
+    const leaderboard = (0, scoring_1.getLeaderboard)();
+    const leaderboardEl = document.getElementById('leaderboard');
     leaderboardEl.innerHTML = `
         <h2>Leaderboard</h2>
         <div class="row d-flex pt-2 mb-5">
@@ -16,25 +14,18 @@ export function displayLeaderboard(): void {
             <div class="col-lg-1 d-flex flex-column justify-content-center align-items-center" id="scores"></div>
         </div>
     `;
-
-    const namesEl = document.getElementById('names')!;
-    const scoresEl = document.getElementById('scores')!;
-
+    const namesEl = document.getElementById('names');
+    const scoresEl = document.getElementById('scores');
     leaderboard.forEach((entry, index) => {
-
         // NAME
         const nameP = document.createElement('p');
         nameP.className = 'person';
         nameP.textContent = entry.name;
-
         // SCORE
         const scoreP = document.createElement('p');
         scoreP.className = 'text-center score';
         scoreP.textContent = `${entry.score} (${entry.percentage}%)`;
-
         namesEl.appendChild(nameP);
         scoresEl.appendChild(scoreP);
     });
 }
-
-

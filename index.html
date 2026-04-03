@@ -17,7 +17,7 @@
       <h1>Brunonono & Bicipos Quiz</h1>
     </header>
     <div class="container mt-5">
-        <div class="player-input">
+        <div id="player-input" style="display: block;">
             <div class="row d-flex pt-2 mb-5">
                 <h3>Wie heißt du? (Pst... das ist deine Chance Batman zu sein!)</h3>
                 <div class="col-lg-10 d-flex flex-column justify-content-center align-items-center">
@@ -30,7 +30,7 @@
             </div>
         </div>
         <!--split screen teil-->
-            <div id="quiz-container" class="card container-fluid" style="display: block;">
+            <div id="quiz-container" class="card container-fluid" style="display: none;">
                 <div class="card-body row g-0 p-0">
                     <div class="card-left col-lg-6">
                         <div class="d-flex mb-5">
@@ -56,7 +56,7 @@
                 <!-- Place the question, the options and the results here - später mit TS! --> 
             </div>
         </div>
-        <div id="leaderboard" class="container mt-5">
+        <div id="leaderboard" class="container mt-5" style="display: none;">
             <h2>Leaderboard</h2>
             <!-- Place the leaderboard list here - später liste mit TS! -->
             <div class="row d-flex pt-2 mb-5">

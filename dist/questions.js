@@ -1,28 +1,20 @@
-export interface Question {
-    id: number;
-    text: string;
-    options: string[];
-    correctAnswer: string;
-    difficulty: "Easy" | "Medium" | "Hard";
-    category: string;
-}
-
-let questionBank: Question[] = [];
-
-export function loadQuestions(): Promise<void> {
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.loadQuestions = loadQuestions;
+exports.getASetOfQuestionsForPlayer = getASetOfQuestionsForPlayer;
+let questionBank = [];
+function loadQuestions() {
     return fetch("../data/questions.json")
         .then(r => r.json())
-        .then(d => {questionBank = d.questions})
-        .catch(() => {questionBank = FALLBACK_QUESTIONS})
+        .then(d => { questionBank = d.questions; })
+        .catch(() => { questionBank = FALLBACK_QUESTIONS; });
 }
-
-export function getASetOfQuestionsForPlayer(): Question[] {
+function getASetOfQuestionsForPlayer() {
     // For now: first 5
     // Later: implement 2 Easy, 2 Medium, 1 Hard selection
     return questionBank.slice(0, 5);
 }
-
-const FALLBACK_QUESTIONS: Question[] = [
+const FALLBACK_QUESTIONS = [
     { id: 1, text: "What is 2+2?", options: ["3", "4", "5"], correctAnswer: "4", difficulty: "Easy", category: "Math" },
     { id: 2, text: "What color is the sky?", options: ["Green", "Blue", "Red"], correctAnswer: "Blue", difficulty: "Easy", category: "General" },
     { id: 3, text: "Which language runs in a browser?", options: ["C++", "Java", "JavaScript"], correctAnswer: "JavaScript", difficulty: "Medium", category: "Programming" },
