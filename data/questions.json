@@ -1,44 +1,34 @@
 {
   "questions": [
-    {
-      "id": 1,
-      "text": "What is 2+2?",
-      "options": ["3", "4", "5", "6"],
-      "correctAnswer": "4",
-      "difficulty": "Easy",
-      "category": "Math"
-    },
-    {
-      "id": 2,
-      "text": "What is the capital of France?",
-      "options": ["Berlin", "Madrid", "Paris", "Lisbon"],
-      "correctAnswer": "Paris",
-      "difficulty": "Easy",
-      "category": "Geography"
-    },
-    {
-      "id": 3,
-      "text": "What does HTML stand for?",
-      "options": ["Hyper Text Markup Language", "High Tech Modern Language", "Hyper Transfer Markup Language", "Home Tool Markup Language"],
-      "correctAnswer": "Hyper Text Markup Language",
-      "difficulty": "Medium",
-      "category": "Web"
-    },
-    {
-      "id": 4,
-      "text": "Which company created TypeScript?",
-      "options": ["Google", "Facebook", "Microsoft", "Apple"],
-      "correctAnswer": "Microsoft",
-      "difficulty": "Medium",
-      "category": "Programming"
-    },
-    {
-      "id": 5,
-      "text": "What does CPU stand for?",
-      "options": ["Central Processing Unit", "Computer Personal Unit", "Central Program Utility", "Core Processing Utility"],
-      "correctAnswer": "Central Processing Unit",
-      "difficulty": "Hard",
-      "category": "Hardware"
-    }
+    { "id": 1, "text": "What do you call a sleeping bull?", "options": ["A bulldozer", "A bullnap", "A snore", "A beef cake"], "correctAnswer": "A bulldozer", "difficulty": "Easy", "category": "Jokes" },
+    { "id": 2, "text": "Why did the scarecrow win an award?", "options": ["Because he was outstanding in his field", "Because he was full of straw", "Because he scared everyone", "Because he was very brave"], "correctAnswer": "Because he was outstanding in his field", "difficulty": "Easy", "category": "Jokes" },
+    { "id": 3, "text": "What has keys but no locks?", "options": ["A piano", "A map", "A keyboard", "A treasure chest"], "correctAnswer": "A piano", "difficulty": "Easy", "category": "Riddles" },
+    { "id": 4, "text": "What has a face and two hands but no arms or legs?", "options": ["A clock", "A watch", "A mirror", "A doll"], "correctAnswer": "A clock", "difficulty": "Easy", "category": "Riddles" },
+    { "id": 5, "text": "What can you catch but not throw?", "options": ["A cold", "A ball", "A fish", "A bus"], "correctAnswer": "A cold", "difficulty": "Easy", "category": "Riddles" },
+    { "id": 6, "text": "What has a head, a tail, but no body?", "options": ["A coin", "A snake", "A letter", "A comet"], "correctAnswer": "A coin", "difficulty": "Easy", "category": "Riddles" },
+    { "id": 7, "text": "What gets wetter as it dries?", "options": ["A towel", "A sponge", "A raincoat", "The sun"], "correctAnswer": "A towel", "difficulty": "Easy", "category": "Riddles" },
+    { "id": 8, "text": "What has to be broken before you can use it?", "options": ["An egg", "A record", "A promise", "A code"], "correctAnswer": "An egg", "difficulty": "Easy", "category": "Riddles" },
+    { "id": 9, "text": "What is full of holes but still holds water?", "options": ["A sponge", "A net", "A strainer", "A brain"], "correctAnswer": "A sponge", "difficulty": "Easy", "category": "Riddles" },
+    { "id": 10, "text": "What question can you never answer yes to?", "options": ["Are you asleep?", "Do you lie?", "Are you dead?", "Do you exist?"], "correctAnswer": "Are you asleep?", "difficulty": "Easy", "category": "Riddles" },
+    { "id": 11, "text": "What comes once in a minute, twice in a moment, but never in a thousand years?", "options": ["The letter M", "The number 1", "A heartbeat", "A blink"], "correctAnswer": "The letter M", "difficulty": "Medium", "category": "Riddles" },
+    { "id": 12, "text": "I speak without a mouth and hear without ears. I have no body, but I come alive with wind. What am I?", "options": ["An echo", "A whisper", "The wind itself", "A rumor"], "correctAnswer": "An echo", "difficulty": "Medium", "category": "Riddles" },
+    { "id": 13, "text": "The more you take, the more you leave behind. What are they?", "options": ["Footsteps", "Memories", "Breaths", "Photographs"], "correctAnswer": "Footsteps", "difficulty": "Medium", "category": "Riddles" },
+    { "id": 14, "text": "What has one eye but cannot see?", "options": ["A needle", "A hurricane", "A cyclone", "A button"], "correctAnswer": "A needle", "difficulty": "Medium", "category": "Riddles" },
+    { "id": 15, "text": "What can run but never walks, has a mouth but never talks, has a head but never weeps, has a bed but never sleeps?", "options": ["A river", "A road", "A train", "A story"], "correctAnswer": "A river", "difficulty": "Medium", "category": "Riddles" },
+    { "id": 16, "text": "What is always in front of you but can't be seen?", "options": ["The future", "The air", "Your nose", "Tomorrow"], "correctAnswer": "The future", "difficulty": "Medium", "category": "Riddles" },
+    { "id": 17, "text": "What has a neck but no head?", "options": ["A bottle", "A guitar", "A shirt", "A bridge"], "correctAnswer": "A bottle", "difficulty": "Medium", "category": "Riddles" },
+    { "id": 18, "text": "What gets bigger the more you take from it?", "options": ["A hole", "A debt", "A balloon", "An ego"], "correctAnswer": "A hole", "difficulty": "Medium", "category": "Riddles" },
+    { "id": 19, "text": "What has many keys but cannot open a single door?", "options": ["A piano", "A keyboard", "A map", "A riddle"], "correctAnswer": "A piano", "difficulty": "Medium", "category": "Riddles" },
+    { "id": 20, "text": "What can you hold without ever touching?", "options": ["Your breath", "A conversation", "A secret", "A grudge"], "correctAnswer": "Your breath", "difficulty": "Medium", "category": "Riddles" },
+    { "id": 21, "text": "I have cities, but no houses. I have mountains, but no trees. I have water, but no fish. What am I?", "options": ["A map", "A globe", "A dream", "A painting"], "correctAnswer": "A map", "difficulty": "Hard", "category": "Riddles" },
+    { "id": 22, "text": "What is so fragile that saying its name breaks it?", "options": ["Silence", "A secret", "A promise", "Trust"], "correctAnswer": "Silence", "difficulty": "Hard", "category": "Riddles" },
+    { "id": 23, "text": "I have no life, but I can die. What am I?", "options": ["A battery", "A fire", "A star", "A dream"], "correctAnswer": "A battery", "difficulty": "Hard", "category": "Riddles" },
+    { "id": 24, "text": "What building has the most stories?", "options": ["A library", "A skyscraper", "A museum", "A university"], "correctAnswer": "A library", "difficulty": "Hard", "category": "Riddles" },
+    { "id": 25, "text": "What has a bottom at the top?", "options": ["Your legs", "A mountain", "A ladder", "A calendar"], "correctAnswer": "Your legs", "difficulty": "Hard", "category": "Riddles" },
+    { "id": 26, "text": "What is always coming but never arrives?", "options": ["Tomorrow", "The future", "Death", "A deadline"], "correctAnswer": "Tomorrow", "difficulty": "Hard", "category": "Riddles" },
+    { "id": 27, "text": "What can be cracked, made, told, and played?", "options": ["A joke", "A code", "A record", "A game"], "correctAnswer": "A joke", "difficulty": "Hard", "category": "Riddles" },
+    { "id": 28, "text": "What has words but never speaks?", "options": ["A book", "A letter", "A sign", "A code"], "correctAnswer": "A book", "difficulty": "Hard", "category": "Riddles" },
+    { "id": 29, "text": "What has a thumb and four fingers but is not alive?", "options": ["A glove", "A hand", "A drawing", "A statue"], "correctAnswer": "A glove", "difficulty": "Hard", "category": "Riddles" },
+    { "id": 30, "text": "What belongs to you but others use it more than you do?", "options": ["Your name", "Your shadow", "Your voice", "Your reflection"], "correctAnswer": "Your name", "difficulty": "Hard", "category": "Riddles" }
   ]
 }
