@@ -1,8 +1,5 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-const questions_js_1 = require("./questions.js");
-const ui_js_1 = require("./ui.js");
-const scoring_js_1 = require("./scoring.js");
+import { displayLeaderboard } from "./ui.js";
+import { createPlayer, storeScore } from "./scoring.js";
 let score = 0;
 let questions = [];
 let playerName = "";
@@ -17,12 +14,13 @@ buttonEl.addEventListener("click", async () => {
     playerName = inputEl.value.trim();
     if (!playerName)
         return;
-    await (0, questions_js_1.loadQuestions)();
-    questions = (0, questions_js_1.getASetOfQuestionsForPlayer)();
+    //zum Testen direkt zum Leaderboard, später: Fragen laden und Quiz starten
+    //await loadQuestions();
+    //questions = getASetOfQuestionsForPlayer();
     // UI wechseln
-    playerInputDiv.style.display = "none";
+    //playerInputDiv.style.display = "none";
     //quizContainerDiv.style.display = "block";
-    //zum Testen direkt zum Leaderboard
+    //showQuestions();
     finishQuiz();
 });
 /*loadQuestions().then(() => {
@@ -34,10 +32,11 @@ buttonEl.addEventListener("click", async () => {
 //function answerQuestion() - checken, ob korrekt, score updaten, nächste Frage anzeigen oder Quiz beenden
 // LEADERBOARD
 function finishQuiz() {
-    const player = (0, scoring_js_1.createPlayer)(playerName, score, questions);
-    (0, scoring_js_1.storeScore)(player);
+    const player = createPlayer(playerName, score, questions);
+    storeScore(player);
     // UI wechseln
-    quizContainerDiv.style.display = "none";
+    playerInputDiv.style.display = "none"; //für jetzt mal hier
+    //quizContainerDiv.style.display = "none";
     leaderboardDiv.style.display = "block";
-    (0, ui_js_1.displayLeaderboard)();
+    displayLeaderboard();
 }

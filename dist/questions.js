@@ -1,15 +1,11 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.loadQuestions = loadQuestions;
-exports.getASetOfQuestionsForPlayer = getASetOfQuestionsForPlayer;
 let questionBank = [];
-function loadQuestions() {
+export function loadQuestions() {
     return fetch("../data/questions.json")
         .then(r => r.json())
         .then(d => { questionBank = d.questions; })
         .catch(() => { questionBank = FALLBACK_QUESTIONS; });
 }
-function getASetOfQuestionsForPlayer() {
+export function getASetOfQuestionsForPlayer() {
     // For now: first 5
     // Later: implement 2 Easy, 2 Medium, 1 Hard selection
     return questionBank.slice(0, 5);

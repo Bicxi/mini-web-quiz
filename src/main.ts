@@ -19,15 +19,16 @@ buttonEl.addEventListener("click", async () => {
     playerName = inputEl.value.trim();
     if (!playerName) return;
 
-    await loadQuestions();
-    questions = getASetOfQuestionsForPlayer();
+    //zum Testen direkt zum Leaderboard, später: Fragen laden und Quiz starten
+
+    //await loadQuestions();
+    //questions = getASetOfQuestionsForPlayer();
 
     // UI wechseln
-    playerInputDiv.style.display = "none";
+    //playerInputDiv.style.display = "none";
     //quizContainerDiv.style.display = "block";
 
-
-    //zum Testen direkt zum Leaderboard
+    //displayQuestions();
     finishQuiz();
 });
 
@@ -37,7 +38,7 @@ buttonEl.addEventListener("click", async () => {
     // TODO: start UI here
 });*/
 
-//function showQuestion() - questions anzeigen, dann answerQuestion()
+//function displayQuestion() - questions anzeigen, dann answerQuestion()
 
 //function answerQuestion() - checken, ob korrekt, score updaten, nächste Frage anzeigen oder Quiz beenden
 
@@ -47,7 +48,8 @@ function finishQuiz() {
     storeScore(player);
 
     // UI wechseln
-    quizContainerDiv.style.display = "none";
+    playerInputDiv.style.display = "none"; //für jetzt mal hier
+    //quizContainerDiv.style.display = "none";
     leaderboardDiv.style.display = "block";
 
     displayLeaderboard();

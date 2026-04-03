@@ -1,17 +1,14 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.displayLeaderboard = displayLeaderboard;
-const scoring_1 = require("./scoring");
+import { getLeaderboard } from './scoring.js';
 function displaySomething() {
 }
-function displayLeaderboard() {
-    const leaderboard = (0, scoring_1.getLeaderboard)();
+export function displayLeaderboard() {
+    const leaderboard = getLeaderboard();
     const leaderboardEl = document.getElementById('leaderboard');
     leaderboardEl.innerHTML = `
         <h2>Leaderboard</h2>
         <div class="row d-flex pt-2 mb-5">
-            <div class="col-lg-11 d-flex flex-column justify-content-center align-items-center" id="names"></div>
-            <div class="col-lg-1 d-flex flex-column justify-content-center align-items-center" id="scores"></div>
+            <div class="col-lg-10 d-flex flex-column justify-content-center align-items-center" id="names"></div>
+            <div class="col-lg-2 d-flex flex-column justify-content-center align-items-center" id="scores"></div>
         </div>
     `;
     const namesEl = document.getElementById('names');

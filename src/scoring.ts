@@ -51,23 +51,3 @@ export function getLeaderboard(): scoreEntry[] {
 
     return scores.sort((a, b) => b.score - a.score);
 }
-
-//EINGABE PLAYER
-const inputEl = document.getElementById("player-name") as HTMLInputElement | null;
-const buttonEl = document.getElementById("playBtn") as HTMLButtonElement | null;
-
-if (inputEl && buttonEl) {
-    buttonEl.addEventListener("click", () => {
-        const name = inputEl.value.trim();
-
-        if (!name) return;
-
-        //Beispiel (später vom Quiz ersetzen!)
-        const questions = getASetOfQuestionsForPlayer();
-        const score = 0;
-
-        const newPlayer = createPlayer(name, score, questions);
-
-        storeScore(newPlayer);
-    });
-}

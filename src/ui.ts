@@ -1,5 +1,5 @@
 import { Question } from "./questions.js";
-import { getLeaderboard } from './scoring';
+import { getLeaderboard } from './scoring.js';
 
 function displaySomething() {
     
@@ -12,8 +12,8 @@ export function displayLeaderboard(): void {
     leaderboardEl.innerHTML = `
         <h2>Leaderboard</h2>
         <div class="row d-flex pt-2 mb-5">
-            <div class="col-lg-11 d-flex flex-column justify-content-center align-items-center" id="names"></div>
-            <div class="col-lg-1 d-flex flex-column justify-content-center align-items-center" id="scores"></div>
+            <div class="col-lg-10 d-flex flex-column justify-content-center align-items-center" id="names"></div>
+            <div class="col-lg-2 d-flex flex-column justify-content-center align-items-center" id="scores"></div>
         </div>
     `;
 
