@@ -6,26 +6,36 @@ export interface Question {
     difficulty: "Easy" | "Medium" | "Hard";
     category: string;
 }
-
 let questionBank: Question[] = [];
-
 export function loadQuestions(): Promise<void> {
     return fetch("../data/questions.json")
         .then(r => r.json())
         .then(d => {questionBank = d.questions})
         .catch(() => {questionBank = FALLBACK_QUESTIONS})
 }
-
 export function getASetOfQuestionsForPlayer(): Question[] {
-    // For now: first 5
-    // Later: implement 2 Easy, 2 Medium, 1 Hard selection
-    return questionBank.slice(0, 5);
-}
+    const easy = questionBank.filter(q => q.difficulty === "Easy");
+    const medium = questionBank.filter(q => q.difficulty === "Medium");
+    const hard = questionBank.filter(q => q.difficulty === "Hard");
 
+    const getRandom = (arr: Question[]): Question => {
+        return arr[Math.floor(Math.random() * arr.length)];
+    };
+    return [
+        getRandom(easy), getRandom(easy),
+        getRandom(medium), getRandom(medium),
+        getRandom(hard)
+    ];
+}
 const FALLBACK_QUESTIONS: Question[] = [
-    { id: 1, text: "What is 2+2?", options: ["3", "4", "5"], correctAnswer: "4", difficulty: "Easy", category: "Math" },
-    { id: 2, text: "What color is the sky?", options: ["Green", "Blue", "Red"], correctAnswer: "Blue", difficulty: "Easy", category: "General" },
-    { id: 3, text: "Which language runs in a browser?", options: ["C++", "Java", "JavaScript"], correctAnswer: "JavaScript", difficulty: "Medium", category: "Programming" },
-    { id: 4, text: "What does HTTP stand for?", options: ["HyperText Transfer Protocol", "High Transfer Text Protocol", "Hyper Transfer Text Protocol"], correctAnswer: "HyperText Transfer Protocol", difficulty: "Medium", category: "Web" },
-    { id: 5, text: "What is 7 x 8?", options: ["48", "56", "64"], correctAnswer: "56", difficulty: "Hard", category: "Math" }
+    { id: 1, text: "What do you call a sleeping bull?", options: ["A bulldozer", "A bullnap", "A snore", "A beef cake"], correctAnswer: "A bulldozer", difficulty: "Easy", category: "Jokes" },
+    { id: 2, text: "Why did the scarecrow win an award?", options: ["Because he was outstanding in his field", "Because he was full of straw", "Because he scared everyone", "Because he was very brave"], correctAnswer: "Because he was outstanding in his field", difficulty: "Easy", category: "Jokes" },
+    { id: 3, text: "What has keys but no locks?", options: ["A piano", "A map", "A keyboard", "A treasure chest"], correctAnswer: "A piano", difficulty: "Easy", category: "Riddles" },
+    { id: 4, text: "What has a face and two hands but no arms or legs?", options: ["A clock", "A watch", "A mirror", "A doll"], correctAnswer: "A clock", difficulty: "Easy", category: "Riddles" },
+    { id: 5, text: "What comes once in a minute, twice in a moment, but never in a thousand years?", options: ["The letter M", "The number 1", "A heartbeat", "A blink"], correctAnswer: "The letter M", difficulty: "Medium", category: "Riddles" },
+    { id: 6, text: "What can you catch but not throw?", options: ["A cold", "A ball", "A fish", "A bus"], correctAnswer: "A cold", difficulty: "Medium", category: "Riddles" },
+    { id: 7, text: "What has a head, a tail, but no body?", options: ["A coin", "A snake", "A letter", "A comet"], correctAnswer: "A coin", difficulty: "Medium", category: "Riddles" },
+    { id: 8, text: "What gets wetter as it dries?", options: ["A towel", "A sponge", "A raincoat", "The sun"], correctAnswer: "A towel", difficulty: "Medium", category: "Riddles" },  
+    { id: 9, text: "I speak without a mouth and hear without ears. I have no body, but I come alive with wind. What am I?", options: ["An echo", "A whisper", "The wind itself", "A rumor"], correctAnswer: "An echo", difficulty: "Hard", category: "Riddles" },
+    { id: 10, text: "The more you take, the more you leave behind. What are they?", options: ["Footsteps", "Memories", "Breaths", "Photographs"], correctAnswer: "Footsteps", difficulty: "Hard", category: "Riddles" }
 ];

@@ -1,42 +1,20 @@
-import { displayLeaderboard } from "./ui.js";
-import { createPlayer, storeScore } from "./scoring.js";
-let score = 0;
-let questions = [];
-let playerName = "";
-// DOM ELEMENTE (für block und none)
+import { loadQuestions, getASetOfQuestionsForPlayer } from "./questions.js";
+import { startQuiz } from "./ui.js";
+const startButton = document.getElementById("playBtn");
 const playerInputDiv = document.getElementById("player-input");
-const quizContainerDiv = document.getElementById("quiz-container");
-const leaderboardDiv = document.getElementById("leaderboard");
-const inputEl = document.getElementById("player-name");
-const buttonEl = document.getElementById("playBtn");
-// NAME EINGABE
-buttonEl.addEventListener("click", async () => {
-    playerName = inputEl.value.trim();
-    if (!playerName)
+const playerNameInput = document.getElementById("player-name");
+const quizContainer = document.getElementById("quiz-container");
+startButton?.addEventListener("click", async () => {
+    const playerName = playerNameInput.value.trim();
+    if (!playerName) {
+        alert("Bitte gib deinen Namen ein!");
         return;
-    //zum Testen direkt zum Leaderboard, später: Fragen laden und Quiz starten
-    //await loadQuestions();
-    //questions = getASetOfQuestionsForPlayer();
-    // UI wechseln
-    //playerInputDiv.style.display = "none";
-    //quizContainerDiv.style.display = "block";
-    //showQuestions();
-    finishQuiz();
-});
-/*loadQuestions().then(() => {
+    }
+    await loadQuestions();
     const questions = getASetOfQuestionsForPlayer();
-    console.log("Quiz ready!", questions);
-    // TODO: start UI here
-});*/
-//function showQuestion() - questions anzeigen, dann answerQuestion()
-//function answerQuestion() - checken, ob korrekt, score updaten, nächste Frage anzeigen oder Quiz beenden
-// LEADERBOARD
-function finishQuiz() {
-    const player = createPlayer(playerName, score, questions);
-    storeScore(player);
-    // UI wechseln
-    playerInputDiv.style.display = "none"; //für jetzt mal hier
-    //quizContainerDiv.style.display = "none";
-    leaderboardDiv.style.display = "block";
-    displayLeaderboard();
-}
+    if (playerInputDiv)
+        playerInputDiv.style.display = "none";
+    if (quizContainer)
+        quizContainer.style.display = "block";
+    startQuiz(questions, playerName);
+});
