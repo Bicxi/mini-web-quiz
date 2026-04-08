@@ -66,7 +66,7 @@ export function displayLeaderboard(onNewTry: () => void): void {
             <div class="col-lg-2 d-flex flex-column justify-content-center align-items-center" id="scores"></div>
         </div>
 
-        <button id="newTryBtn" class="btn btn-primary">Neuer Versuch</button>
+        <button id="newTryBtn" class="text-center score">Neuer Versuch</button>
     `;
 
     const namesEl = document.getElementById('names')!;
