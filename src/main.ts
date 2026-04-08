@@ -1,10 +1,32 @@
 import { loadQuestions, getASetOfQuestionsForPlayer } from "./questions.js";
-import { startQuiz } from "./ui.js";
+import { startQuiz, displayLeaderboard } from "./ui.js";
 
 const startButton = document.getElementById("playBtn");
 const playerInputDiv = document.getElementById("player-input");
 const playerNameInput = document.getElementById("player-name") as HTMLInputElement;
 const quizContainer = document.getElementById("quiz-container");
+const leaderboardEl = document.getElementById("leaderboard");
+
+//WECHSELN DER MODULE:
+function showStart() {
+    if (leaderboardEl) leaderboardEl.style.display = "none";
+    if (quizContainer) quizContainer.style.display = "none";
+    if (playerInputDiv) playerInputDiv.style.display = "block";
+}
+
+function showQuiz() {
+    if (playerInputDiv) playerInputDiv.style.display = "none";
+    if (quizContainer) quizContainer.style.display = "block";
+}
+
+function showLeaderboard() {
+    if (quizContainer) quizContainer.style.display = "none";
+    if (leaderboardEl) leaderboardEl.style.display = "block";
+
+    displayLeaderboard(() => {
+        showStart(); //neuer Versuch
+    });
+}
 
 startButton?.addEventListener("click", async () => {
     const playerName = playerNameInput.value.trim();
@@ -15,9 +37,10 @@ startButton?.addEventListener("click", async () => {
     
     await loadQuestions();
     const questions = getASetOfQuestionsForPlayer();
+
+    showQuiz();
     
-    if (playerInputDiv) playerInputDiv.style.display = "none";
-    if (quizContainer) quizContainer.style.display = "block";
-    
-    startQuiz(questions, playerName);
+    startQuiz(questions, playerName, () => {
+        showLeaderboard();
+    });
 });
