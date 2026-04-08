@@ -11,7 +11,6 @@
     --bs-success: #9ae09a;
     --bs-danger: #800000;
     --bs-gradient: linear-gradient(90deg, var(--bs-secondary), var(--bs-tertiary));
-
 }
 
 .bg-tertiary {
@@ -71,6 +70,11 @@ button {
 button:hover {
     background-color: var(--bs-primary);
     color: white;
+}
+button:focus-visible {
+    outline-color: var(--bs-primary);
+    outline-style: solid;
+    outline-width: 2px;
 }
 
 ::placeholder {
