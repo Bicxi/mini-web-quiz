@@ -1,5 +1,5 @@
 import { getLeaderboard, createPlayer, storeScore, getDifficulty } from './scoring.js';
-export function startQuiz(questions, playerName) {
+export function startQuiz(questions, playerName, onFinish) {
     let score = 0;
     let currentIndex = 0;
     const container = document.getElementById("quiz-container");
@@ -42,20 +42,14 @@ export function startQuiz(questions, playerName) {
                     // Quiz finished
                     const player = createPlayer(playerName, score, questions);
                     storeScore(player);
-                    // Hide quiz, show leaderboard
-                    if (container)
-                        container.style.display = "none";
-                    const leaderboardEl = document.getElementById("leaderboard");
-                    if (leaderboardEl)
-                        leaderboardEl.style.display = "block";
-                    displayLeaderboard();
+                    onFinish();
                 }
             });
         });
     }
     showQuestion(0);
 }
-export function displayLeaderboard() {
+export function displayLeaderboard(onNewTry) {
     const leaderboard = getLeaderboard();
     const leaderboardEl = document.getElementById('leaderboard');
     leaderboardEl.innerHTML = `
@@ -64,6 +58,8 @@ export function displayLeaderboard() {
             <div class="col-lg-10 d-flex flex-column justify-content-center align-items-center" id="names"></div>
             <div class="col-lg-2 d-flex flex-column justify-content-center align-items-center" id="scores"></div>
         </div>
+
+        <button id="newTryBtn" class="btn btn-primary">Neuer Versuch</button>
     `;
     const namesEl = document.getElementById('names');
     const scoresEl = document.getElementById('scores');
@@ -77,4 +73,6 @@ export function displayLeaderboard() {
         namesEl.appendChild(nameP);
         scoresEl.appendChild(scoreP);
     });
+    const newTryBtn = document.getElementById("newTryBtn");
+    newTryBtn?.addEventListener("click", onNewTry);
 }
