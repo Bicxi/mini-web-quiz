@@ -8,9 +8,9 @@ export interface Question {
 }
 let questionBank: Question[] = [];
 export function loadQuestions(): Promise<void> {
-    const BASE_PATH = window.location.hostname === "bicxi.github.io"
+    const BASE_PATH = window.location.hostname.includes("github.io")
     ? "/mini-web-quiz"  // GitHub Pages
-    : "..";             // vscode
+    : ".";             // vscode
 
     return fetch(`${BASE_PATH}/data/questions.json`)
         .then(r => r.json())
