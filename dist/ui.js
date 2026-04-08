@@ -1,15 +1,12 @@
-import { Question } from "./questions.js";
 import { getLeaderboard, createPlayer, storeScore, getDifficulty } from './scoring.js';
-
-export function startQuiz(questions: Question[], playerName: string, onFinish: () => void) {
+export function startQuiz(questions, playerName, onFinish) {
     let score = 0;
     let currentIndex = 0;
     const container = document.getElementById("quiz-container");
-    
-    function showQuestion(index: number) {
+    function showQuestion(index) {
         const q = questions[index];
-        if (!q) return;
-        
+        if (!q)
+            return;
         if (container) {
             container.innerHTML = `
                 <div class="card-body row g-0 p-0">
@@ -32,17 +29,16 @@ export function startQuiz(questions: Question[], playerName: string, onFinish: (
                 </div>
             `;
         }
-        
         const buttons = document.querySelectorAll('.answer');
         buttons.forEach(btn => {
             btn.addEventListener('click', () => {
                 if (btn.textContent === q.correctAnswer) {
                     score += getDifficulty(q.difficulty);
                 }
-                
                 if (index + 1 < questions.length) {
                     showQuestion(index + 1);
-                } else {
+                }
+                else {
                     // Quiz finished
                     const player = createPlayer(playerName, score, questions);
                     storeScore(player);
@@ -51,14 +47,11 @@ export function startQuiz(questions: Question[], playerName: string, onFinish: (
             });
         });
     }
-    
     showQuestion(0);
 }
-
-export function displayLeaderboard(onNewTry: () => void): void {
+export function displayLeaderboard(onNewTry) {
     const leaderboard = getLeaderboard();
-    const leaderboardEl = document.getElementById('leaderboard') as HTMLElement;
-
+    const leaderboardEl = document.getElementById('leaderboard');
     leaderboardEl.innerHTML = `
         <h2>Leaderboard</h2>
         <div class="row d-flex pt-2 mb-5">
@@ -68,23 +61,18 @@ export function displayLeaderboard(onNewTry: () => void): void {
 
         <button id="newTryBtn" class="text-center score">Neuer Versuch</button>
     `;
-
-    const namesEl = document.getElementById('names')!;
-    const scoresEl = document.getElementById('scores')!;
-
+    const namesEl = document.getElementById('names');
+    const scoresEl = document.getElementById('scores');
     leaderboard.forEach((entry) => {
         const nameP = document.createElement('p');
         nameP.className = 'person';
         nameP.textContent = entry.name;
-
         const scoreP = document.createElement('p');
         scoreP.className = 'text-center score';
         scoreP.textContent = `${entry.score} (${entry.percentage}%)`;
-
         namesEl.appendChild(nameP);
         scoresEl.appendChild(scoreP);
     });
-
     const newTryBtn = document.getElementById("newTryBtn");
     newTryBtn?.addEventListener("click", onNewTry);
 }

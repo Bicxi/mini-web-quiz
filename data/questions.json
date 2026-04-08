@@ -1,34 +1,244 @@
 {
   "questions": [
-    { "id": 1, "text": "What do you call a sleeping bull?", "options": ["A bulldozer", "A bullnap", "A snore", "A beef cake"], "correctAnswer": "A bulldozer", "difficulty": "Easy", "category": "Jokes" },
-    { "id": 2, "text": "Why did the scarecrow win an award?", "options": ["Because he was outstanding in his field", "Because he was full of straw", "Because he scared everyone", "Because he was very brave"], "correctAnswer": "Because he was outstanding in his field", "difficulty": "Easy", "category": "Jokes" },
-    { "id": 3, "text": "What has keys but no locks?", "options": ["A piano", "A map", "A keyboard", "A treasure chest"], "correctAnswer": "A piano", "difficulty": "Easy", "category": "Riddles" },
-    { "id": 4, "text": "What has a face and two hands but no arms or legs?", "options": ["A clock", "A watch", "A mirror", "A doll"], "correctAnswer": "A clock", "difficulty": "Easy", "category": "Riddles" },
-    { "id": 5, "text": "What can you catch but not throw?", "options": ["A cold", "A ball", "A fish", "A bus"], "correctAnswer": "A cold", "difficulty": "Easy", "category": "Riddles" },
-    { "id": 6, "text": "What has a head, a tail, but no body?", "options": ["A coin", "A snake", "A letter", "A comet"], "correctAnswer": "A coin", "difficulty": "Easy", "category": "Riddles" },
-    { "id": 7, "text": "What gets wetter as it dries?", "options": ["A towel", "A sponge", "A raincoat", "The sun"], "correctAnswer": "A towel", "difficulty": "Easy", "category": "Riddles" },
-    { "id": 8, "text": "What has to be broken before you can use it?", "options": ["An egg", "A record", "A promise", "A code"], "correctAnswer": "An egg", "difficulty": "Easy", "category": "Riddles" },
-    { "id": 9, "text": "What is full of holes but still holds water?", "options": ["A sponge", "A net", "A strainer", "A brain"], "correctAnswer": "A sponge", "difficulty": "Easy", "category": "Riddles" },
-    { "id": 10, "text": "What question can you never answer yes to?", "options": ["Are you asleep?", "Do you lie?", "Are you dead?", "Do you exist?"], "correctAnswer": "Are you asleep?", "difficulty": "Easy", "category": "Riddles" },
-    { "id": 11, "text": "What comes once in a minute, twice in a moment, but never in a thousand years?", "options": ["The letter M", "The number 1", "A heartbeat", "A blink"], "correctAnswer": "The letter M", "difficulty": "Medium", "category": "Riddles" },
-    { "id": 12, "text": "I speak without a mouth and hear without ears. I have no body, but I come alive with wind. What am I?", "options": ["An echo", "A whisper", "The wind itself", "A rumor"], "correctAnswer": "An echo", "difficulty": "Medium", "category": "Riddles" },
-    { "id": 13, "text": "The more you take, the more you leave behind. What are they?", "options": ["Footsteps", "Memories", "Breaths", "Photographs"], "correctAnswer": "Footsteps", "difficulty": "Medium", "category": "Riddles" },
-    { "id": 14, "text": "What has one eye but cannot see?", "options": ["A needle", "A hurricane", "A cyclone", "A button"], "correctAnswer": "A needle", "difficulty": "Medium", "category": "Riddles" },
-    { "id": 15, "text": "What can run but never walks, has a mouth but never talks, has a head but never weeps, has a bed but never sleeps?", "options": ["A river", "A road", "A train", "A story"], "correctAnswer": "A river", "difficulty": "Medium", "category": "Riddles" },
-    { "id": 16, "text": "What is always in front of you but can't be seen?", "options": ["The future", "The air", "Your nose", "Tomorrow"], "correctAnswer": "The future", "difficulty": "Medium", "category": "Riddles" },
-    { "id": 17, "text": "What has a neck but no head?", "options": ["A bottle", "A guitar", "A shirt", "A bridge"], "correctAnswer": "A bottle", "difficulty": "Medium", "category": "Riddles" },
-    { "id": 18, "text": "What gets bigger the more you take from it?", "options": ["A hole", "A debt", "A balloon", "An ego"], "correctAnswer": "A hole", "difficulty": "Medium", "category": "Riddles" },
-    { "id": 19, "text": "What has many keys but cannot open a single door?", "options": ["A piano", "A keyboard", "A map", "A riddle"], "correctAnswer": "A piano", "difficulty": "Medium", "category": "Riddles" },
-    { "id": 20, "text": "What can you hold without ever touching?", "options": ["Your breath", "A conversation", "A secret", "A grudge"], "correctAnswer": "Your breath", "difficulty": "Medium", "category": "Riddles" },
-    { "id": 21, "text": "I have cities, but no houses. I have mountains, but no trees. I have water, but no fish. What am I?", "options": ["A map", "A globe", "A dream", "A painting"], "correctAnswer": "A map", "difficulty": "Hard", "category": "Riddles" },
-    { "id": 22, "text": "What is so fragile that saying its name breaks it?", "options": ["Silence", "A secret", "A promise", "Trust"], "correctAnswer": "Silence", "difficulty": "Hard", "category": "Riddles" },
-    { "id": 23, "text": "I have no life, but I can die. What am I?", "options": ["A battery", "A fire", "A star", "A dream"], "correctAnswer": "A battery", "difficulty": "Hard", "category": "Riddles" },
-    { "id": 24, "text": "What building has the most stories?", "options": ["A library", "A skyscraper", "A museum", "A university"], "correctAnswer": "A library", "difficulty": "Hard", "category": "Riddles" },
-    { "id": 25, "text": "What has a bottom at the top?", "options": ["Your legs", "A mountain", "A ladder", "A calendar"], "correctAnswer": "Your legs", "difficulty": "Hard", "category": "Riddles" },
-    { "id": 26, "text": "What is always coming but never arrives?", "options": ["Tomorrow", "The future", "Death", "A deadline"], "correctAnswer": "Tomorrow", "difficulty": "Hard", "category": "Riddles" },
-    { "id": 27, "text": "What can be cracked, made, told, and played?", "options": ["A joke", "A code", "A record", "A game"], "correctAnswer": "A joke", "difficulty": "Hard", "category": "Riddles" },
-    { "id": 28, "text": "What has words but never speaks?", "options": ["A book", "A letter", "A sign", "A code"], "correctAnswer": "A book", "difficulty": "Hard", "category": "Riddles" },
-    { "id": 29, "text": "What has a thumb and four fingers but is not alive?", "options": ["A glove", "A hand", "A drawing", "A statue"], "correctAnswer": "A glove", "difficulty": "Hard", "category": "Riddles" },
-    { "id": 30, "text": "What belongs to you but others use it more than you do?", "options": ["Your name", "Your shadow", "Your voice", "Your reflection"], "correctAnswer": "Your name", "difficulty": "Hard", "category": "Riddles" }
+    {
+      "id": 1,
+      "text": "What is the name of the fairy in Peter Pan?",
+      "options": ["Tinker Bell", "Fairy Godmother", "Tooth Fairy", "Silvermist"],
+      "correctAnswer": "Tinker Bell",
+      "difficulty": "Easy",
+      "category": "Entertainment"
+    },
+    {
+      "id": 2,
+      "text": "Which planet is known as the Red Planet?",
+      "options": ["Jupiter", "Mars", "Venus", "Saturn"],
+      "correctAnswer": "Mars",
+      "difficulty": "Easy",
+      "category": "Science"
+    },
+    {
+      "id": 3,
+      "text": "Who painted the Mona Lisa?",
+      "options": ["Van Gogh", "Picasso", "Da Vinci", "Rembrandt"],
+      "correctAnswer": "Da Vinci",
+      "difficulty": "Easy",
+      "category": "Art"
+    },
+    {
+      "id": 4,
+      "text": "What is the capital of France?",
+      "options": ["Berlin", "Madrid", "Paris", "Lisbon"],
+      "correctAnswer": "Paris",
+      "difficulty": "Easy",
+      "category": "Geography"
+    },
+    {
+      "id": 5,
+      "text": "Which animal is known as the 'Ship of the Desert'?",
+      "options": ["Horse", "Camel", "Elephant", "Lion"],
+      "correctAnswer": "Camel",
+      "difficulty": "Easy",
+      "category": "Animals"
+    },
+    {
+      "id": 6,
+      "text": "What does the 'HTTP' in a website URL stand for?",
+      "options": ["High Transfer Text Protocol", "HyperText Transfer Protocol", "Hyper Transfer Text Protocol", "High Text Transfer Protocol"],
+      "correctAnswer": "HyperText Transfer Protocol",
+      "difficulty": "Medium",
+      "category": "Technology"
+    },
+    {
+      "id": 7,
+      "text": "Who wrote 'Romeo and Juliet'?",
+      "options": ["Charles Dickens", "Jane Austen", "William Shakespeare", "Mark Twain"],
+      "correctAnswer": "William Shakespeare",
+      "difficulty": "Medium",
+      "category": "Literature"
+    },
+    {
+      "id": 8,
+      "text": "What is the hardest natural substance on Earth?",
+      "options": ["Gold", "Iron", "Diamond", "Platinum"],
+      "correctAnswer": "Diamond",
+      "difficulty": "Medium",
+      "category": "Science"
+    },
+    {
+      "id": 9,
+      "text": "Which country gifted the Statue of Liberty to the United States?",
+      "options": ["England", "Spain", "France", "Germany"],
+      "correctAnswer": "France",
+      "difficulty": "Medium",
+      "category": "History"
+    },
+    {
+      "id": 10,
+      "text": "In which year did World War II end?",
+      "options": ["1943", "1944", "1945", "1946"],
+      "correctAnswer": "1945",
+      "difficulty": "Medium",
+      "category": "History"
+    },
+    {
+      "id": 11,
+      "text": "What is the main ingredient in guacamole?",
+      "options": ["Tomato", "Onion", "Avocado", "Lime"],
+      "correctAnswer": "Avocado",
+      "difficulty": "Hard",
+      "category": "Food"
+    },
+    {
+      "id": 12,
+      "text": "Who painted the ceiling of the Sistine Chapel?",
+      "options": ["Donatello", "Michelangelo", "Raphael", "Leonardo da Vinci"],
+      "correctAnswer": "Michelangelo",
+      "difficulty": "Hard",
+      "category": "Art"
+    },
+    {
+      "id": 13,
+      "text": "What is the name of the largest ocean on Earth?",
+      "options": ["Atlantic Ocean", "Indian Ocean", "Arctic Ocean", "Pacific Ocean"],
+      "correctAnswer": "Pacific Ocean",
+      "difficulty": "Hard",
+      "category": "Geography"
+    },
+    {
+      "id": 14,
+      "text": "Which famous physicist developed the theory of relativity?",
+      "options": ["Isaac Newton", "Galileo Galilei", "Nikola Tesla", "Albert Einstein"],
+      "correctAnswer": "Albert Einstein",
+      "difficulty": "Hard",
+      "category": "Science"
+    },
+    {
+      "id": 15,
+      "text": "Who directed the movie 'Inception'?",
+      "options": ["James Cameron", "Steven Spielberg", "Christopher Nolan", "Quentin Tarantino"],
+      "correctAnswer": "Christopher Nolan",
+      "difficulty": "Hard",
+      "category": "Movies"
+    },
+    {
+      "id": 16,
+      "text": "What is the color of an emerald?",
+      "options": ["Red", "Blue", "Green", "Yellow"],
+      "correctAnswer": "Green",
+      "difficulty": "Easy",
+      "category": "General"
+    },
+    {
+      "id": 17,
+      "text": "How many legs does a spider have?",
+      "options": ["6", "8", "10", "12"],
+      "correctAnswer": "8",
+      "difficulty": "Easy",
+      "category": "Animals"
+    },
+    {
+      "id": 18,
+      "text": "What is the opposite of 'north'?",
+      "options": ["East", "West", "South", "Center"],
+      "correctAnswer": "South",
+      "difficulty": "Easy",
+      "category": "Geography"
+    },
+    {
+      "id": 19,
+      "text": "Which fruit is known for keeping doctors away?",
+      "options": ["Orange", "Banana", "Grape", "Apple"],
+      "correctAnswer": "Apple",
+      "difficulty": "Easy",
+      "category": "Food"
+    },
+    {
+      "id": 20,
+      "text": "What does a thermometer measure?",
+      "options": ["Pressure", "Temperature", "Humidity", "Wind speed"],
+      "correctAnswer": "Temperature",
+      "difficulty": "Easy",
+      "category": "Science"
+    },
+    {
+      "id": 21,
+      "text": "Which country is famous for the Great Wall?",
+      "options": ["Japan", "India", "China", "Korea"],
+      "correctAnswer": "China",
+      "difficulty": "Medium",
+      "category": "Geography"
+    },
+    {
+      "id": 22,
+      "text": "Who wrote 'The Adventures of Tom Sawyer'?",
+      "options": ["Ernest Hemingway", "Mark Twain", "F. Scott Fitzgerald", "Charles Dickens"],
+      "correctAnswer": "Mark Twain",
+      "difficulty": "Medium",
+      "category": "Literature"
+    },
+    {
+      "id": 23,
+      "text": "What is the square root of 64?",
+      "options": ["6", "7", "8", "9"],
+      "correctAnswer": "8",
+      "difficulty": "Medium",
+      "category": "Mathematics"
+    },
+    {
+      "id": 24,
+      "text": "Which instrument has 88 keys?",
+      "options": ["Violin", "Guitar", "Piano", "Flute"],
+      "correctAnswer": "Piano",
+      "difficulty": "Medium",
+      "category": "Music"
+    },
+    {
+      "id": 25,
+      "text": "Who was the first person to walk on the moon?",
+      "options": ["Buzz Aldrin", "Neil Armstrong", "Michael Collins", "Yuri Gagarin"],
+      "correctAnswer": "Neil Armstrong",
+      "difficulty": "Medium",
+      "category": "History"
+    },
+    {
+      "id": 26,
+      "text": "Which element has the chemical symbol 'Au'?",
+      "options": ["Silver", "Iron", "Gold", "Aluminum"],
+      "correctAnswer": "Gold",
+      "difficulty": "Hard",
+      "category": "Science"
+    },
+    {
+      "id": 27,
+      "text": "Who painted 'The Starry Night'?",
+      "options": ["Claude Monet", "Vincent van Gogh", "Pablo Picasso", "Edvard Munch"],
+      "correctAnswer": "Vincent van Gogh",
+      "difficulty": "Hard",
+      "category": "Art"
+    },
+    {
+      "id": 28,
+      "text": "What is the longest river in the world?",
+      "options": ["Amazon", "Nile", "Yangtze", "Mississippi"],
+      "correctAnswer": "Nile",
+      "difficulty": "Hard",
+      "category": "Geography"
+    },
+    {
+      "id": 29,
+      "text": "Who developed the theory of evolution by natural selection?",
+      "options": ["Gregor Mendel", "Charles Darwin", "Louis Pasteur", "Isaac Newton"],
+      "correctAnswer": "Charles Darwin",
+      "difficulty": "Hard",
+      "category": "Science"
+    },
+    {
+      "id": 30,
+      "text": "Which Shakespeare play features the characters Rosencrantz and Guildenstern?",
+      "options": ["Macbeth", "Othello", "Hamlet", "King Lear"],
+      "correctAnswer": "Hamlet",
+      "difficulty": "Hard",
+      "category": "Literature"
+    }
   ]
 }
