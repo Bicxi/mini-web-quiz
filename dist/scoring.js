@@ -13,8 +13,8 @@ export function calculateScore(currentScore, question, isCorrect) {
 }
 //PROZENT
 export function calculatePercentage(score) {
-    // 2hard + 2medium + 1easy = 10 
-    const maxPossible = 10;
+    // 1hard + 2medium + 2easy = 9
+    const maxPossible = 9;
     return Math.round((score / maxPossible) * 100);
 }
 //PLAYER
