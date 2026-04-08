@@ -1,9 +1,6 @@
 let questionBank = [];
 export function loadQuestions() {
-    const BASE_PATH = window.location.hostname.includes("github.io")
-        ? "/mini-web-quiz" // GitHub Pages
-        : "."; // vscode
-    return fetch(`${BASE_PATH}/data/questions.json`)
+    return fetch("data/questions.json")
         .then(r => r.json())
         .then(d => { questionBank = d.questions; })
         .catch(() => { questionBank = FALLBACK_QUESTIONS; });
